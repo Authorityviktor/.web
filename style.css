@@ -5,16 +5,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* MAIN CONTAINER */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px 15px;
-  position: relative; /* so .form can be absolutely positioned inside */
-  background: linear-gradient(to right, #7e2e2e, #c45555, #c67a7a);
-  border-radius: 6px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-}
+
 
 /* NAVBAR */
 .navbar {
@@ -172,26 +163,7 @@ body {
   margin-bottom: 10px;
 }
 
-/* RESPONSIVE FORM - MOBILE */
-@media (max-width: 768px) {
-  .form {
-    position: static;
-    width: 100%;
-    margin-top: 30px;
-  }
 
-  .navbar,
-  .menu ul {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .search {
-    margin-top: 10px;
-  }
-}
-
-        
 
         
         
