@@ -79,7 +79,7 @@ body {
 /* FORM */
 .form {
   position: absolute;
-  top: 140px;
+  top: 120px;
   right: 20px;
   width: 300px;
   background: linear-gradient(to right, #7e2e2e, #c45555, #c67a7a);
@@ -87,7 +87,7 @@ body {
   color: bisque;
   border-radius: 20px;
   border: 1px solid black;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 20px 20px 2px rgba(0, 0, 0, 0.2);
 }
 
 /* FORM INPUTS */
@@ -139,11 +139,13 @@ body {
 /* CONTENT */
 .content {
   margin-top: 20px;
+   color: bisque;
 }
 
 .content h1 {
   font-size: 22px;
   margin-bottom: 10px;
+   color: bisque;
 }
 
 .content h2,
@@ -152,17 +154,79 @@ body {
 .content h5 {
   font-size: 16px;
   margin-top: 15px;
+   color: bisque;
 }
 
 .content ul {
   padding-left: 20px;
   margin-bottom: 10px;
+  color: bisque;
 }
 
 .content p {
   margin-bottom: 10px;
+  color: bisque;
 }
 
+/* ============================
+   MOBILE-FRIENDLY RESPONSIVE DESIGN
+   ============================ */
+@media (max-width: 768px) {
+  /* NAVBAR STACKS VERTICALLY */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    gap: 15px;
+  }
+
+  .menu ul {
+    flex-direction: row;
+    gap: 15px;
+    padding-left: 0;
+  }
+
+  .search {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 60%;
+  }
+
+  .srch {
+    width: 70%;
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    width: 40%;
+    margin-left: 0;
+  }
+
+  /* CONTENT TEXT SCALE */
+  .content h1 {
+    font-size: 18px;
+  }
+
+  .content h2,
+  .content h3,
+  .content h4,
+  .content h5 {
+    font-size: 14px;
+  }
+
+  /* FORM STACKING + CENTERING */
+  .form {
+    position: static;
+    width: 90%;
+    margin-top: 30px;
+    padding: 15px;
+    box-shadow: none;
+  }
+
+  .bttn {
+    width: 40%;
+  }
+}
 
 
         
